@@ -4,7 +4,7 @@ import dataTransform from '../../transforms/transformDataGet/index';
 import { fetchGet } from '../../endPoints/fetchGet';
 
 interface IParamsService {
-  key: any;
+  key: string;
   resource: string[];
   params?: any;
   keyResults: string;

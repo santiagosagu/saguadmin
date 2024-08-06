@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import React from 'react';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MessageIcon from '@mui/icons-material/Message';
@@ -16,7 +17,7 @@ const Dashboard = () => {
   const user = localStorage.getItem('user');
 
   const { data, isLoading } = useGetList({
-    key: 'test',
+    key: 'ListRick',
     resource: ['character'],
     params: { name: 'rick', status: 'alive', id: '1' },
     keyResults: 'results',
